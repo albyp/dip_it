@@ -1,10 +1,15 @@
 # Diploma of Information Technology
 
-## Lessons
+## Classes
 
-### Lesson 1 (16th Apr 2024)
+### Class 1 (16th Apr 2024)
 - Introduction to the course
 - Meet 'n greet
 - Basic structure of a website
 - Getting started with VS Code, HTML & Live Server
 - Basic HTML, playing around etc.
+
+### Class 2 (18th Apr 2024)
+- Further dive into HTML tags
+- Proper structure of a HTML page (head, body, footer)
+- Linking multiple pages together
