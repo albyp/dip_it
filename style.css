@@ -1,0 +1,39 @@
+/* colors */
+:root {
+    --bg: #3b4252;
+    --text: #d8dee9;
+    --text-hover: #88c0d0;
+    --text-highlight: #a3be8c;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* links */
+a:visited, a:link {
+    color: var(--text);
+}
+a:hover {
+    color: var(--text-hover);
+}
+a.current {
+    color: var(--text-highlight);
+}
+
+.tile {
+    padding: 5px;
+    width: 90%;
+}
+
+#services {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.image-title {
+    font-size: 24px;
+}
