@@ -14,3 +14,6 @@
 - Proper structure of a HTML page (head, body, footer)
 - Linking multiple pages together
 - Inline styling (I jumped ahead and linked a style.css to keep my pages consistent.)
+
+### Class 3 (23rd Apr 2024)
+- Recreate a website
