@@ -24,3 +24,8 @@ I was unable to attend this class, but I caught up on the 1st May.
 - Linking a stylesheet and using a style.css file
 - Blockquote, creating classes, styling classes and tags independently
 - Button styles, hovering, transition effect
+
+### Class 5 (2nd May 2024)
+- Creating a website based off a given wireframe PDF
+- Experimenting with styling multiple classes, flex, grids, primary/secondary buttons
+![screenshot of website](assets/class_5_screen.PNG)
