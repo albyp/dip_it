@@ -29,3 +29,13 @@ I was unable to attend this class, but I caught up on the 1st May.
 - Creating a website based off a given wireframe PDF
 - Experimenting with styling multiple classes, flex, grids, primary/secondary buttons
 ![screenshot of website](assets/class_5_screen.PNG)
+
+### Class 6 (7th May 2024)
+- Online assessment 'Originate and Develop Concepts' (no coding required)
+
+### Class 7 (9th May 2024)
+- Introduction to Flexbox
+- Revisiting Class-5 wireframing using flex components
+
+### Class 8 (14th May 2024)
+- Continue Class-7 wireframing using flex, introducing fonts, font-icons and creating a personal touch
