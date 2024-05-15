@@ -11,21 +11,25 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class ="navbar-brand" href="#">
-                    <img src="wireframe-images/logo.png" alt="Icon" height="40px">
+                <!-- Logo (Left) -->
+                <a class="navbar-brand" href="#">
+                    <img id="nav-logo" src="src/images/cyber-logo.png" alt="Icon" height="50px">
                 </a>
+                <!-- Navbar toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link" href="#">Features</a>
-                      <a class="nav-link" href="#">Pricing</a>
-                      <a class="nav-link" href="#">Community</a>
-                      <a class="nav-link" href="#">Support</a>
-                      <button class="btn btn-primary" type="button">Log In</button>
-                      <button class="btn btn-secondary" type="button">Register</button>
-                    </div>
+                <!-- Links (Middle) -->
+                <div class="collapse navbar-nav navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Community</a>
+                    <a class="nav-link" href="#">Support</a>
+                </div>
+                <!-- Buttons (Right) -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <button class="btn btn-primary me-2" type="button">Log In</button>
+                    <button class="btn btn-secondary" type="button">Register</button>
                 </div>
             </div>
         </nav>
@@ -36,12 +40,14 @@
             <!-- hero -->
             <div id="hero" class="container-fluid">
                 <div id="hero-content" class="container-lg">
-                    <h1><span class="brand-logo">Cyber-cas</span></h1>
-                    <h4><span class="brand-logo">Cyber-cas</span> should be your one-stop-shop to fulfill your gaming cravings.<br>
-                    Designed by a company that has branched from physical venues, we endevour<br>
-                    to maintain the excitement that comes with face-to-face gaming with the <br>
-                    availability to take it wherever you want!</h4>
-                    <button class="btn btn-primary" style="width: max-content;">Learn More</button>
+                    <div id="hero-content-card">
+                        <h1><span class="brand-logo">Cyber-cas</span></h1>
+                        <h4><span class="brand-logo">Cyber-cas</span> should be your one-stop-shop to fulfill your gaming cravings.<br>
+                        Designed by a company that has branched from physical venues, we endevour<br>
+                        to maintain the excitement that comes with face-to-face gaming with the <br>
+                        availability to take it wherever you want!</h4>
+                        <button class="btn btn-primary" style="width: max-content;">Learn More</button>
+                    </div>
                 </div>
             </div>
             
@@ -56,7 +62,7 @@
                 </div>
                 <div class="row g-5">
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card grow-shadow">
                             <img class="rounded service-img" src="src/images/cyber-game.jpg" alt="service-image">
                             <div class="card-body">
                                 <h3>Gaming</h3>
@@ -65,7 +71,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card grow-shadow">
                             <img class="rounded service-img" src="src/images/cyber-social.jpg" alt="service-image">
                             <div class="card-body">
                                 <h3>Social</h3>
@@ -74,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card grow-shadow">
                             <img class="rounded service-img" src="src/images/cyber-entertainment.jpg" alt="service-image">
                             <div class="card-body">
                                 <h3>Entertainment</h3>

@@ -9,8 +9,9 @@
     --secondary: white;
     --text: rgb(224, 224, 224);
     --bg-light: white;
-    --bg-grad-start: #792267;
-    --bg-grad-end: #007ec3;
+    --bg-grad-start: #007ec3;
+    --bg-grad-mid: #792267;
+    --bg-grad-end: black;
     --text-brand: white;
     --text-brand-shadow: red;
 }
@@ -19,12 +20,15 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--text);
     /* background-color: var(--bg-light); */
-    background-image: linear-gradient(45deg, var(--bg-grad-start), var(--bg-grad-end));
+    background-image: linear-gradient(115deg, var(--bg-grad-start), var(--bg-grad-mid), var(--bg-grad-end));
     background-repeat: no-repeat;
 }
 
 .navbar {
-    max-width: 1000px;
+    width: 70%;
+    display: flex;
+    column-gap: 25px;
+    margin:auto;
 }
 
 .brand-logo {
@@ -36,7 +40,7 @@ body {
 #hero {
     background-image: url(src/images/cyber-city.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: 100% 1000px;
     height: 500px;
 }
@@ -46,9 +50,25 @@ body {
     flex-direction: column;
     gap: 15px;
     justify-content: center;
-    height: 100%;
+    height:100%;
 }
 
+#nav-logo {
+    border-radius: 15%;
+}
+
+#hero-content-card {
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+h4 {
+    padding: 15px 0;
+}
 
 /* services */
 #services {
@@ -61,6 +81,11 @@ body {
 
 .service-img {
     height: 300px;
+}
+
+.grow-shadow:hover {
+    box-shadow: 5px 5px 15px var(--bg-grad-start);
+    transform: scale(1.01);
 }
 
 /* footer */
