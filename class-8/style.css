@@ -71,7 +71,7 @@ h4 {
 }
 
 /* services */
-#services {
+#services, #showcase {
     padding-top: 40px;
 }
 
@@ -86,6 +86,11 @@ h4 {
 .grow-shadow:hover {
     box-shadow: 5px 5px 15px var(--bg-grad-start);
     transform: scale(1.01);
+}
+
+/* showcase */
+.col-6 img {
+    max-width: 50%;
 }
 
 /* footer */
