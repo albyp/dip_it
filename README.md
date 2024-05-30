@@ -39,3 +39,11 @@ I was unable to attend this class, but I caught up on the 1st May.
 
 ### Class 8 (14th May 2024)
 - Continue Class-7 wireframing using flex, introducing fonts, font-icons and creating a personal touch
+
+### Class 9 (16th May 2024)
+- Introduction to CSS grids
+- Responsive media queries
+
+### Class 10 (28th May 2024)
+- Introduction to bootstrap (skipped class)
+- Using bootstrap grids, headings, buttons etc.
