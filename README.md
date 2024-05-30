@@ -47,3 +47,8 @@ I was unable to attend this class, but I caught up on the 1st May.
 ### Class 10 (28th May 2024)
 - Introduction to bootstrap (skipped class)
 - Using bootstrap grids, headings, buttons etc.
+
+### Class 11 (30th May 2024)
+Refer to subfolder 'Skywings'
+- Further dive into bootstrap
+- Building demo website 'Skywings' to test knowledge thus far
