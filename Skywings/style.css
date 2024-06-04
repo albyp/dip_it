@@ -13,6 +13,37 @@
     --coreWhite:white;
 }
 
+/* heading colors */
+.cardheading {
+  color: var(--coreDarkPink);
+}
+
+.h5pink {
+  color: var(--corePink);
+}
+
+h3 {
+  color: var(--coreDarkPink);
+}
+
+
+a {
+  color: var(--corePink);
+}
+
+.vacant {
+  color: green;
+}
+
+
+.footerlinksCol {
+  color: var(--coreWhite);
+}
+
+.footerlinksCol:hover {
+  color: var(--corePink);
+}
+
 /* roboto font classes */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
@@ -94,23 +125,17 @@ h1 {
   font-size: 80px;
 }
 
-
-
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-
-
 .display-4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-
-
 
 .display-2 {
   font-family: "Roboto", sans-serif;
@@ -131,13 +156,11 @@ h2 {
 
 }
 
-
 .btn:hover {
   background-color: var(--coreWhite);
   color: var(--corePink);
   border-color: var(--coreMidPink)
 }
-
 
 .btn:hover:active {
   background-color: var(--corePinkFade);
@@ -145,9 +168,7 @@ h2 {
   border-color: var(--coreMidPink)
 }
 
-/* image style */
 /* Images */
-
 
 .navImage {
   height: 100vh;
@@ -203,4 +224,11 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Divider */
+.divider2 {
+  max-width: 100%;
+  height: 70px;
+  background-color: rgb(246, 247, 247);
 }

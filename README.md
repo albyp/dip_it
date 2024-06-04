@@ -52,3 +52,7 @@ I was unable to attend this class, but I caught up on the 1st May.
 Refer to subfolder 'Skywings'
 - Further dive into bootstrap
 - Building demo website 'Skywings' to test knowledge thus far
+
+### Class 12 (4th June 2024)
+- Further developing Skywings
+- New concpets, lazy loading
