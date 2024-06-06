@@ -56,3 +56,8 @@ Refer to subfolder 'Skywings'
 ### Class 12 (4th June 2024)
 - Further developing Skywings
 - New concpets, lazy loading
+
+### Class 23 (6th June 2024)
+- Group development of Home page for Skywings
+- Assessment to develop a unique page for Skywings
+- Gather resources for Skywings Australia webpage
