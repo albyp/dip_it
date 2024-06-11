@@ -113,7 +113,6 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 
-
 .team-member:hover {
   transform: scale(1.05);
 }
@@ -132,6 +131,46 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+
+/* australia page styles */
+#ausImage {
+  background-image: url(images/aus-sydney2.jpg);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.learn-more-btn {
+  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.3s;
+}
+
+.card:hover .learn-more-btn {
+  display: block;
+  bottom: 3rem;
+}
+
 
 /* adding fonts */
 h1 {

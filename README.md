@@ -61,3 +61,6 @@ Refer to subfolder 'Skywings'
 - Group development of Home page for Skywings
 - Assessment to develop a unique page for Skywings
 - Gather resources for Skywings Australia webpage
+
+### Class 14 (11th June 2024)
+- Developing Skywings page for assessment
