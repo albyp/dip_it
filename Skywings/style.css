@@ -139,12 +139,12 @@ a {
 }
 
 .card {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-}
+} */
 
 .card-img-overlay {
   display: flex;
@@ -154,7 +154,8 @@ a {
 }
 
 .card-title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .learn-more-btn {
@@ -163,12 +164,17 @@ a {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  transition: bottom 0.3s;
+  transition: bottom 0.5s;
 }
 
 .card:hover .learn-more-btn {
   display: block;
-  bottom: 3rem;
+  bottom: 1rem;
+}
+
+.card:hover .card-img {
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 
