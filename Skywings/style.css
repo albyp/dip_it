@@ -161,7 +161,7 @@ a {
 .learn-more-btn {
   display: none;
   position: absolute;
-  bottom: 1rem;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
   transition: bottom 0.5s;
@@ -177,6 +177,9 @@ a {
   transition: 0.5s;
 }
 
+.card img.card-img {
+  max-height: 500px;
+}
 
 /* adding fonts */
 h1 {
