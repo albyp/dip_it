@@ -177,7 +177,7 @@ a {
   transition: 0.5s;
 } */
 
-img.card-img {
+img.img-small {
   max-height: 280px;
 }
 
@@ -216,7 +216,7 @@ img.card-img {
 }
 
 .custom-card:hover {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .custom-card:hover .learn-more {
