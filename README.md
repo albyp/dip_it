@@ -64,3 +64,13 @@ Refer to subfolder 'Skywings'
 
 ### Class 14 (11th June 2024)
 - Developing Skywings page for assessment
+
+### Class 15 (13th June 2024)
+
+### Class 16 (18th June 2024)
+
+### Class 17 (20th June 2024)
+
+### Class 18 (25th June 2024)
+
+### Class 19 (27th June 2024)
