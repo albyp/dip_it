@@ -74,3 +74,7 @@ Refer to subfolder 'Skywings'
 ### Class 18 (25th June 2024)
 
 ### Class 19 (27th June 2024)
+
+### Class 20 (16th July 2024)
+- Building final project website
+- Gathering resources, introduction to uizard
