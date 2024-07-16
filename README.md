@@ -76,5 +76,7 @@ Refer to subfolder 'Skywings'
 ### Class 19 (27th June 2024)
 
 ### Class 20 (16th July 2024)
-- Building final project website
-- Gathering resources, introduction to uizard
+- Creating wireframe using Figma for final front-end project
+- Gathering resources
+
+### Class 21 (18th July 2024)
