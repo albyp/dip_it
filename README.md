@@ -76,6 +76,7 @@ Refer to subfolder 'Skywings'
 ### Class 19 (27th June 2024)
 
 ### Class 20 (16th July 2024)
+- Creating design prototypes using Uizard
 - Creating wireframe using Figma for final front-end project
 - Gathering resources
 
