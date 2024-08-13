@@ -81,3 +81,6 @@ Refer to subfolder 'Skywings'
 - Gathering resources
 
 ### Class 21 (18th July 2024)
+
+### Class 22 (23rd July 2024)
+- Figma tutorial & workthrough
