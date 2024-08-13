@@ -108,6 +108,12 @@ a {
 }
 
 
+/* home page specials */
+.spec-tile:hover {
+  transform: scale(1.05);
+}
+
+
 /* about page style codes */
 .team-member {
   transition: transform 0.3s ease-in-out;
