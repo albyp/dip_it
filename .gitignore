@@ -2,4 +2,6 @@ src/images/
 class-3/src
 documents/
 
+*.zip
+
 .ds_store
