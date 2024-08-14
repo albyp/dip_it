@@ -12,9 +12,10 @@
 
 /* root color codes */
 :root {
-    --coreGrey: grey;
-    --coreBlue: rgb(31, 31, 75);
-
+    --coreGrey: #333333;
+    --coreBlue: #1e1f26;
+    --coreWhite: #ffffff;
+    --coreBlack: #030303;
 }
 
 
