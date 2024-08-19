@@ -19,6 +19,18 @@
 }
 
 
+/* general */
+
+
+/* home page styles */
+#hero-banner {
+  text-align: center;
+}
+
+
+
+
+
 /* space mono styles */
 .space-mono-regular {
     font-family: "Space Mono", monospace;
