@@ -1,6 +1,8 @@
 # Diploma of Information Technology
 
-## Classes
+# Subjects
+
+## Front-end Developement
 
 ### Class 1 (16th Apr 2024)
 - Introduction to the course
@@ -84,3 +86,10 @@ Refer to subfolder 'Skywings'
 
 ### Class 22 (23rd July 2024)
 - Figma tutorial & workthrough
+
+## Back-end Development
+
+### Class 32 (27th August 2024)
+- Introduction to lecturer
+- Run through of the subject outline (building a full-stack web application within 8 weeks)
+- Learning variables (const, let)
