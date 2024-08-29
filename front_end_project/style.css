@@ -13,22 +13,137 @@
 /* root color codes */
 :root {
     --coreGrey: #333333;
+    --coreDarkGrey: #262626;
+    --coreLightGrey: #505050;
     --coreBlue: #1e1f26;
+    --coreLightBlue: #8bc9fa;
     --coreWhite: #ffffff;
     --coreBlack: #030303;
 }
 
 
 /* general */
+body {
+  background-color: var(--coreGrey);
+}
 
+h1, h2, h3, h4, h5, span, p {
+  color: var(--coreWhite) !important;
+  font-family: "Space Mono";
+}
 
-/* home page styles */
-#hero-banner {
-  text-align: center;
+input, button.footer-button, button {
+  font-family: "Space Mono";
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--coreBlack);
+  --bs-btn-border-color: var(--coreBlack);
+  --bs-btn-hover-bg: var(--coreBlue);
+  --bs-btn-hover-border-color: var(--coreBlue);
+  --bs-btn-active-color: var(--coreBlack);
+  --bs-btn-active-bg: var(--coreWhite);
+  --bs-btn-active-border-color: var(--coreWhite);
+}
+
+.btn-special {
+  --bs-btn-bg: var(--coreLightBlue);
+  --bs-btn-border-color: var(--coreLightBlue);
+  --bs-btn-hover-bg: var(--coreBlue);
+  --bs-btn-hover-border-color: var(--coreBlue);
+  --bs-btn-active-color: var(--coreBlack);
+  --bs-btn-active-bg: var(--coreWhite);
+  --bs-btn-active-border-color: var(--coreWhite);
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.card {
+  background-color: var(--coreGrey);
+}
+
+#footer {
+  margin-top: 50px;
+  background-color: var(--coreDarkGrey);
+  margin-bottom: 0;
+}
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-button {
+  width: 150px;
 }
 
 
+/* home page styles */
+#hero-banner::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+}
 
+#hero-banner #hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+#brand-name {
+  font-size: 28px;
+}
+
+#highlight-article, #recent-articles {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#highlight-card {
+  text-align: left;
+  background-color: var(--coreLightGrey);
+}
+
+/* .read-hover {
+  display: none;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:(bottom 0.5s);
+} */
+
+.card-img-overlay .read-hover {
+  position: relative;
+  bottom: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.card-img-overlay:hover .read-hover {
+  opacity: 1;
+}
 
 
 /* space mono styles */

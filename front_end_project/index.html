@@ -13,16 +13,20 @@
 <!-- navbar -->
 <div class="container-fluid bg-dark fixed-top">
     <nav class="navbar navbar-dark bg-dark">
-         <a class="navbar-brand" href="#">
-            <img src="images/Icontoaster-Leox-Graphite-Developer.256.png" alt="" width="50px">
-         </a>
-         
+        <div class="container-fluid"></div>
+            <a class="navbar-brand" href="#">
+                <img src="images/Icontoaster-Leox-Graphite-Developer.256.png" alt="Low opacity image of greyscale computer server" width="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
     </nav>
 </div>
 
 <!-- hero banner -->
-<div id="hero-banner" class="container-fluid" style=" height: 450px; background-image: url(images/banner.png);">
-    <div class="mx-auto" style="text-align: center">
+<div id="hero-banner" class="container-fluid" style="padding-top: 76px; height: 450px; background-image: url(images/banner.png); background-size:contain;">
+    <div id="hero-text" style="background-repeat: no-repeat; text-align: center; height: 100%; display: flex; flex-direction: column; gap: 25px; justify-content: center;">
         <span id="brand-name">TK</span>
         <h1>Explore the latest in technology news</h1>
     </div>
@@ -30,16 +34,96 @@
 
 <!-- highlight article -->
 <div id="highlight-article" class="container">
+    <h2 class="section-title">Article of the month</h2>
 
+    <div id="highlight-card" class="card mb-3 mx-auto border-0 rounded-0" style="width: 75%;">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="images/blog_apple.png" class="img-fluid rounded-0" alt="Apple m4 computer chip on a dark background">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h3 class="card-title">Apple's M4 Chip:<br>Redefining Performance</h3>
+                    <p class="article-body">Apple’s new M4 chip is set to revolutionize the tech landscape. With enhanced processing power, improved energy efficiency, and integrated AI capabilities, the M4 is designed to handle complex tasks seamlessly.</p>
+                    <button type="button" class="btn btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- recent articles -->
 <div id="recent-articles" class="container">
+    <h2 class="section-title">Recent Articles</h2>
 
+    <div id="" class="container" style="width: 75%;">
+        <div class="row g-0">
+            <div class="col-lg-4 col-md-4">
+                <div class="card border-0 rounded-0">
+                    <img src="images/blog_quantum.png" class="card-img rounded-0 opacity-30" alt="">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">Quantum Computing<br>The Next Big Leap</h3>
+                        <button type="button" class="btn btn-primary read-hover">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- footer -->
 <footer>
+    <div id="footer" class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="row p-2 justify-content-center">
+                        <a href="index.html">
+                            <img class="footer-icon" src="images/Icontoaster-Leox-Graphite-Developer.256.png" alt="">
+                        </a>
+                    </div>
+                    <div class="row p-2 justify-content-center">
+                        <a href="https://x.com/">
+                            <img class="footer-icon" src="images/twitter-x.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="row p-2 justify-content-center">
+                        <a href="https://linkedin.com/">
+                            <img class="footer-icon" src="images/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row p-2 justify-content-center">
+                        <button type="button" class="footer-button btn btn-secondary" onclick="location.href='blogs.html'">Blogs</button>
+                    </div>
+                    <div class="row p-2 justify-content-center">
+                        <button type="button" class="footer-button btn btn-secondary" onclick="location.href='about.html'">About Us</button>
+                    </div>
+                    <div class="row p-2 justify-content-center">
+                        <button type="button" class="footer-button btn btn-secondary" onclick="location.href='contact.html'">Contact Us</button>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row p-2 text-center">
+                        <p class="footer-text">Subscribe to our newsletter!</p>
+                    </div>
+                    <div class="row p-2">
+                        <input type="email" id="subscribe-email" class="input-form text-center" placeholder="Enter your email">
+                    </div>
+                    <div class="row p-2 justify-content-center">
+                        <button type="button" class="footer-button btn btn-primary btn-special">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 
         4 col, 3 rows
         twitter | home | information about the site | Connect with us
