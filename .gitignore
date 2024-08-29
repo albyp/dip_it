@@ -5,3 +5,6 @@ documents/
 *.zip
 
 .ds_store
+
+# specific projects
+working_with_clients_and_industry/
