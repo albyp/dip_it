@@ -119,6 +119,10 @@ p.text-faded {
   padding-top: 25px;
 }
 
+.divider {
+  color: var(--coreWhite);
+}
+
 
 /* home page styles */
 #hero-banner::before {
