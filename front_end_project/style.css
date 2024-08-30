@@ -15,6 +15,7 @@
     --coreGrey: #333333;
     --coreDarkGrey: #262626;
     --coreLightGrey: #505050;
+    --coreOffWhite: #7f7f7f;
     --coreBlue: #1e1f26;
     --coreLightBlue: #8bc9fa;
     --coreWhite: #ffffff;
@@ -28,7 +29,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, span, p, a {
-  color: var(--coreWhite) !important;
+  color: var(--coreWhite);
   font-family: "Space Mono";
 }
 
@@ -62,6 +63,10 @@ p {
   line-height: 1;
 }
 
+p.text-faded {
+  color: var(--coreOffWhite);
+}
+
 .btn-primary {
   --bs-btn-bg: var(--coreBlack);
   --bs-btn-border-color: var(--coreBlack);
@@ -90,11 +95,13 @@ p {
   background-color: var(--coreGrey);
 }
 
+.p-body {
+  line-height: 1.2rem;
+}
+
 #footer {
   margin-top: 50px;
   background-color: var(--coreDarkGrey);
-  position: fixed;
-  bottom: 0;
 }
 
 .footer-icon {
@@ -172,7 +179,10 @@ p {
 /* about page styles */
 #about-container {
   margin-top: 100px;
-  text-align: center;
+}
+
+.card-management, .card-authors {
+  background-color: var(--coreBlue);
 }
 
 
