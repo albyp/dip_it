@@ -29,8 +29,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, span, p, a {
-  color: var(--coreWhite);
   font-family: "Space Mono";
+}
+
+.text-light {
+  color: var(--coreWhite);
 }
 
 .norm {
@@ -189,6 +192,11 @@ p.text-faded {
   background-color: var(--coreBlue);
 }
 
+
+/* blogs page styles */
+#popular-blogs {
+  margin-top: 100px; 
+}
 
 /* space mono styles */
 .space-mono-regular {
