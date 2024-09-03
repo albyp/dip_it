@@ -45,7 +45,7 @@
 <div id="about-container" class="container">
     <h1 class="text-center text-light">Contact Us</h1>
     
-    <div id="contact-forms" class="pb-2">
+    <div id="contact-forms" class="pb-4">
         <h2 id="greeting" class="h2-large text-center text-light"></h2>
         <select class="form-select" aria-label="Default select example">
             <option selected>Please select</option>
@@ -54,15 +54,57 @@
             <option value="3">I have a press enquiry</option>
         </select>
         
-        <div id="on-select-div">
-            <h2 class="h2-large text-center text-light">Tell us more:</h2>
-        </div>
-        
-        <div class="pb-2">
-            <h2 class="h2-large text-center text-light">Tell us about you:</h2>
+        <section id="contact-bug-form" class="hidden-form">
+            <h2 class="h2-large text-center text-light pt-4">Tell us more:</h2>
+            <label for="bugFormURL" class="form-label">Provide the URL of the page with issues:</label>
+            <input action="" id="bugFormURL" class="form-control">
 
-            <button type="button" class="btn btn-primary">Submit</button>
+            <label for="bugFormOS" class="form-label">Which operating system do you use (e.g. iOS, Android, Windows, macOS):</label>
+            <input action="" id="bugFormOS" class="form-control">
+            
+            <label for="bugFormBrowser" class="form-label">Which browser do you use (e.g. Chrome, Firefox, Safari):</label>
+            <input action="" id="bugFormBrowser" class="form-control">
+            
+            <label for="bugFormSum" class="form-label">Summarise the problem in one sentence:*</label>
+            <input action="" id="bugFormSum" class="form-control">
+            
+            <label for="bugFormDet" class="form-label">Explain the problem in detail:*</label>
+            <textarea action="" id="bugFormDet" class="form-control" rows="3"></textarea>
+        </section>
+
+        <section id="contact-story-form" class="hidden-form">
+            <h2 class="h2-large text-center text-light pt-4">Pitch Your Story:</h2>
+            <label for="storyTitle" class="form-label">Story Title:</label>
+            <input id="storyTitle" class="form-control">
+
+            <label for="storySummary" class="form-label">Story Summary:</label>
+            <textarea id="storySummary" class="form-control" rows="3"></textarea>
+
+            <label for="storyDetails" class="form-label">Full Details:</label>
+            <textarea id="storyDetails" class="form-control" rows="5"></textarea>
+        </section>
+
+        <section id="contact-press-form" class="hidden-form">
+            <h2 class="h2-large text-center text-light pt-4">Press Enquiry:</h2>
+            <label for="pressOrg" class="form-label">Your Organization:</label>
+            <input id="pressOrg" class="form-control">
+
+            <label for="pressEnquiry" class="form-label">Enquiry Details:</label>
+            <textarea id="pressEnquiry" class="form-control" rows="5"></textarea>
+        </section>
+
+        <div class="py-4">
+            <h2 class="h2-large text-center text-light">Tell us about you:</h2>
+            <label for="aboutName" class="form-label">First and last name:*</label>
+            <input id="aboutName" class="form-control">
+
+            <label for="aboutEmail" class="form-label">Email address:*</label>
+            <input id="aboutEmail" class="form-control">
+            
+            <label for="aboutUser" class="form-label">Username (if you have one):</label>
+            <input id="aboutUser" class="form-control">
         </div>
+        <button type="button" class="btn btn-primary">Submit</button>
     </div>
 </div>
 
@@ -116,6 +158,31 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const selectElement = document.querySelector("select.form-select");
+        const bugForm = document.getElementById("contact-bug-form");
+        const storyForm = document.getElementById("contact-story-form");
+        const pressForm = document.getElementById("contact-press-form");
+
+        selectElement.addEventListener("change", function() {
+            // Hide all forms initially
+            bugForm.style.display = "none";
+            storyForm.style.display = "none";
+            pressForm.style.display = "none";
+
+            // Show the selected form
+            if (this.value == "1") {
+                bugForm.style.display = "block";
+            } else if (this.value == "2") {
+                storyForm.style.display = "block";
+            } else if (this.value == "3") {
+                pressForm.style.display = "block";
+            }
+        });
+    });
+</script>
 
 <script>
     function getGreeting() {
