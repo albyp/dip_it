@@ -93,3 +93,8 @@ Refer to subfolder 'Skywings'
 - Introduction to lecturer
 - Run through of the subject outline (building a full-stack web application within 8 weeks)
 - Learning variables (const, let)
+
+### Class 33 (3rd September 2024)
+- Revision of past week
+- Array methods (push, unshift, pop)
+- Task manager exercise
