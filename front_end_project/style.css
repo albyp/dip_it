@@ -154,15 +154,6 @@ p {
   background-color: var(--coreLightGrey);
 }
 
-/* .read-hover {
-  display: none;
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  transition:(bottom 0.5s);
-} */
-
 .card-img-overlay {
   display: flex;
   flex-direction: column;
@@ -194,6 +185,11 @@ p {
 
 
 /* blogs page styles */
+.card-img-overlay .blog-button {
+  margin-top: 76px;
+  margin-bottom: auto;
+}
+
 #popular-blogs {
   margin-top: 100px; 
 }
@@ -224,6 +220,10 @@ p {
   width: 100%;
   min-height: 200px;
   object-fit: cover;
+}
+
+.card:hover .blog-img {
+  opacity: 0.7;
 }
 
 .btn-blog-tag {
