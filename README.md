@@ -89,12 +89,26 @@ Refer to subfolder 'Skywings'
 
 ## Back-end Development
 
-### Class 32 (27th August 2024)
+### Class 33 (27th August 2024)
 - Introduction to lecturer
 - Run through of the subject outline (building a full-stack web application within 8 weeks)
 - Learning variables (const, let)
 
-### Class 33 (3rd September 2024)
+### Class 34 (3rd September 2024)
 - Revision of past week
 - Array methods (push, unshift, pop)
 - Task manager exercise
+
+### Class 35 (5th September 2024)
+- Learn about objects
+- D.O.M.
+
+### Class 36 (10th September 2024)
+- Learning Scope
+- Prototype
+- Array methods
+- Error handling (try, catch and throw)
+- Library exercise
+
+### Class 37 (12th September 2024)
+- Revision
