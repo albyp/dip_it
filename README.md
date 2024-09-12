@@ -112,3 +112,7 @@ Refer to subfolder 'Skywings'
 
 ### Class 37 (12th September 2024)
 - Revision
+- Syncronus and asyncornus code
+- Callbacks
+- Promises
+- async await
