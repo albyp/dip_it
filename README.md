@@ -116,3 +116,7 @@ Refer to subfolder 'Skywings'
 - Callbacks
 - Promises
 - async await
+
+### Class 37 (17th September 2024)
+- Revision
+- Using APIs
