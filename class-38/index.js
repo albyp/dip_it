@@ -52,4 +52,37 @@ fetch('https://submit_todo.com/api/submit', {
 .catch(error => console.error(error));
 
 // create a post request to post some favourite foods
+let favFoods = [
+    'Parmi',
+    'Steak sandwich',
+    'Pasta',
+    'Pizza'
+]; // Favourite foods array
+
+function postFavFoods(foods) {
+    foods.forEach(food => {
+        fetch('https://my-recipes.com/api/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ foodName: food}) // send each food as an object
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to submit food');
+            }
+            return response.json();
+        })
+        .then(data => console.log(`Success: ${data.foodName} added.`))
+        .catch(error => console.error('Error:', error));
+    });
+}
+
+postFavFoods(favFoods);
+
 // create a get request using fetch for a favourite food
+fetch('https://my-recipes.com/api/get-favourites')
+    .then(response => response.json())
+    .then(data => console.log('Favourite foods:', data))
+    .catch(error => console.error('Fetch error:', error));
