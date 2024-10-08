@@ -121,3 +121,8 @@ Refer to subfolder 'Skywings'
 - Revision
 - Using APIs
 - JSON
+
+### Class 39 (8th October 2024)
+- Learing concepts of full stack applications
+- Using NPM
+ - Create a basic calculator application
