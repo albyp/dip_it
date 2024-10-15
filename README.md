@@ -125,4 +125,8 @@ Refer to subfolder 'Skywings'
 ### Class 39 (8th October 2024)
 - Learing concepts of full stack applications
 - Using NPM
- - Create a basic calculator application
+- Create a basic calculator application
+
+ ### Class 40 (10th October 2024)
+ - Debugging and other useful extensions
+ - Creating a basic express server (routes & modules)
