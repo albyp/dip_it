@@ -14,5 +14,4 @@ working_with_clients_and_industry/
 
 # node files
 */node_modules
-*package.json
 *package-lock.json
