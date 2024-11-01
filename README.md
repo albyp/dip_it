@@ -130,3 +130,17 @@ Refer to subfolder 'Skywings'
  ### Class 40 (10th October 2024)
  - Debugging and other useful extensions
  - Creating a basic express server (routes & modules)
+
+ ### Class 41 (15th October 2024)
+ 
+
+ ### Class 42 (17th October 2024)
+ - Databases (MongoDB)
+
+ ### Class 43 (29th October 2024)
+ - Reviewing online documents for back-end project
+ - Online forms Q1
+
+ ### Class 44 (31st October 24)
+ - Reviewing online documents
+ - Online forms Q2
