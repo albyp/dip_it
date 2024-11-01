@@ -7,6 +7,9 @@ const app = express();
 // define the port number
 const port = 3500;
 
+const userRouter = requrie('./routes/users');
+app.use('/users', userRouter);
+
 // define route for root URL
 app.get('/', (request, response) => {
     response.send('Hello Equinim Class');
@@ -21,11 +24,6 @@ app.listen(port, () => {
 app.get('about', (request, response) => {
     response.send('This is the about page');
 });
-
-
-// // REWATCH LECTURE TO FIND THE ABOVE CODE
-// const userRouter = requrie('./routes/users');
-// app.use('/users', userRouter);
 
 // const booksRouter = requrie('./routes/books');
 // app.use('/books', booksRouter);
