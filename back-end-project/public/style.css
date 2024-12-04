@@ -1,0 +1,72 @@
+/* Montserrat import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* root color codes */
+:root {
+    --coreGrey: #333333;
+    --coreDarkGrey: #262626;
+    --coreLightGrey: #505050;
+    --coreOffWhite: #7f7f7f;
+    --coreBlue: #1e1f26;
+    --coreLightBlue: #8bc9fa;
+    --coreWhite: #ffffff;
+    --coreBlack: #030303; 
+}
+
+/* general */
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--coreDarkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ 
+.container {
+  background: var(--coreGrey);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--coreOffWhite);
+  border-radius: 4px;
+}
+
+button {
+  background-color: #5cb85c;
+  color: var(--coreWhite);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-light {
+  color: var(--coreWhite);
+}
