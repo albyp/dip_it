@@ -14,7 +14,8 @@ testing/
 working_with_clients_and_industry/
 
 # node files
-*/node_modules
+node_modules/
+*/node_modules/*
 *package-lock.json
 
 .env
