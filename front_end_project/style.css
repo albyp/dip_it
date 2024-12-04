@@ -197,8 +197,10 @@ p {
 .blog-card {
   background-color: var(--coreBlue);
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -206,8 +208,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  padding: 5px 10px 10px 10px;
+  height: auto;
+  padding: 10px;
 }
 
 .blog-card h2 {
@@ -218,7 +220,7 @@ p {
 
 .blog-img {
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
