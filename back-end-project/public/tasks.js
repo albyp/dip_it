@@ -1,26 +1,67 @@
-const token = localStorage.getItem('token'); // Retrieve JWT from storage
+const token = localStorage.getItem('token'); // Retrieve the JWT from storage
 
 // Fetch and display tasks
 const loadTasks = async () => {
     try {
         const response = await fetch('/tasks', {
-            headers: { 'Authorisation': token },
+            method: 'GET',
+            headers: {
+                'Authorisation': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ title, description }),
         });
 
         const tasks = await response.json();
 
-        const taskList = document.getElementById('taskList');
-        taskList.innerHTML = ''; // Clear existing tasks
-
-        tasks.forEach(task => {
-            const taskItem = document.createElement('li');
-            taskItem.classList.add('list-group-item');
-            taskItem.textContent = `${task.title}: ${task.description}`;
-            taskList.appendChild(taskItem);
-        });
+        if (response.ok) {
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = ''; // Clear existing tasks
+            
+            tasks.forEach(task => {
+                // Checkbox
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = task.completed;
+                checkbox.classList.add('me-2');
+                checkbox.addEventListener('change', async () => {
+                    await updateTaskCompletion(task._id, checkbox.checked);
+                });
+    
+                // Task title and description
+                const taskInfo = document.createElement('div');
+                taskInfo.innerHTML = `<strong>${tasl.title}</strong><br>${task.description}`;
+    
+                taskItem.appendChild(checkbox);
+                taskItem.appendChild(taskInfo);
+                taskItem.appendChild(taskItem);
+            });
+        } else {
+            alert('Failed to load tasks.');
+        }
     } catch (err) {
         console.error('Error fetching tasks:', err);
         alert('Could not load tasks. Please try again.');
+    }
+};
+
+// Update task completion status
+const updateTaskCompletion = async (taskId, completed) => {
+    try {
+        const response = await fetch(`/tasks/${taskId}`, {
+            method: 'PATCH',
+            headers: {
+                'Authorisation': `Bearer ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ completed }),
+        });
+
+        if (!response.ok) {
+            alert('Failed to update task status.');
+        }
+    } catch (err) {
+        console.error('Error updating task:', err);
     }
 };
 
