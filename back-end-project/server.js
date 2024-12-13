@@ -26,13 +26,13 @@ app.get('/', (req, res) => {
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.MONGO_URI)
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch((err) => console.error('Error connecting to MongoDB:', err));
 
 // Routes
 app.use('/auth', authRoutes);
-app.user('/tasks', taskRoutes);
+app.use('/tasks', taskRoutes);
 
 // Define port and start server
 const PORT = process.env.PORT || 3000;
