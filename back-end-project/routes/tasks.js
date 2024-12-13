@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const Task = require('../models/Task');
 const User = require('../models/User');
 
-const router = express.router();
+const router = express.Router();
 
 // Middleware to verify JWT
 const authenticateToken = (req, res, next) => {
@@ -48,6 +48,29 @@ router.get('/', authenticateToken, async (req, res) => {
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Server error while fetching tasks' });
+    }
+});
+
+// Update task completion
+router.patch('/:id', authenticateToken, async (req, res) => {
+    const { id } = req.params;
+    const { completed } = req.body;
+
+    try {
+        const task = await Task.findOneAndUpdate(
+            { _id: id, userId: req.user.id }, // ensure the task belongs to the user
+            { completed },
+            { new: true }
+        );
+
+        if (!task) {
+            return res.status(404).json({ error: 'TAsk not found or not authorised' });
+        }
+
+        res.status(200).json(task);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to update task' });
     }
 });
 
