@@ -32,7 +32,7 @@ router.post('/signup', async (req, res) => {
     }
 });
 
-const jwt = require('jsonwebtoken');1
+const jwt = require('jsonwebtoken');
 
 // login route
 router.post('/login', async (req, res) => {
