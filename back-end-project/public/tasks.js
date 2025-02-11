@@ -1,14 +1,23 @@
+// Retrieve the JWT from storage
 const token = localStorage.getItem('token'); // Retrieve the JWT from storage
+
+if (!token) {
+    alert('Please login first');
+    window.location.href = '/login'; // Redirect user to login page
+}
+
+// Standard headers configuration with the token
+const headers = {
+    'Authorisation': `Bearer ${token}`,
+    'Content-Type': 'application/json',
+}
 
 // Fetch and display tasks
 const loadTasks = async () => {
     try {
         const response = await fetch('/tasks', {
             method: 'GET',
-            headers: {
-                'Authorisation': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-            },
+            headers: headers,
             body: JSON.stringify({ title, description }),
         });
 
@@ -30,7 +39,7 @@ const loadTasks = async () => {
     
                 // Task title and description
                 const taskInfo = document.createElement('div');
-                taskInfo.innerHTML = `<strong>${tasl.title}</strong><br>${task.description}`;
+                taskInfo.innerHTML = `<strong>${task.title}</strong><br>${task.description}`;
     
                 taskItem.appendChild(checkbox);
                 taskItem.appendChild(taskInfo);
@@ -50,10 +59,7 @@ const updateTaskCompletion = async (taskId, completed) => {
     try {
         const response = await fetch(`/tasks/${taskId}`, {
             method: 'PATCH',
-            headers: {
-                'Authorisation': `Bearer ${token}`,
-                'Content-Type': 'application/json',
-            },
+            headers: headers,
             body: JSON.stringify({ completed }),
         });
 
@@ -75,10 +81,7 @@ document.getElementById('taskForm').addEventListener('submit', async (event) => 
     try {
         const response = await fetch('/tasks', {
             method: 'POST',
-            headers: {
-                'Authorisation': token,
-                'Content-Type': 'application/json',
-            },
+            headers: headers,
             body: JSON.stringify({ title, description }),
         });
 
