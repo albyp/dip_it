@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 // Route pointers
 const authRoutes = require('./routes/auth');
@@ -14,6 +15,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
+app.use(cors())
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.static('public'));
